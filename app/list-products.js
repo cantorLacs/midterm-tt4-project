@@ -22,62 +22,75 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             name: 'img1',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            image: img1
+            image: img1,
+            price: '$10.00'
         },
         {
             name: 'img2',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            image: img2
+            image: img2,
+            price: '$10.00'
+            
         },
         {
             name: 'img3',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            image: img3
+            image: img3,
+            price: '$10.00'
         },
         {
             name: 'img4',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            image: img4
+            image: img4,
+            price: '$10.00'
         },
         {
             name: 'img5',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            image: img5
+            image: img5,
+            price: '$10.00'
         },
         {
             name: 'img6',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            image: img6
+            image: img6,
+            price: '$10.00'
         },
         {
             name: 'img7',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            image: img7
+            image: img7,
+            price: '$10.00'
         },
         {
             name: 'img8',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            image: img8
+            image: img8,
+            price: '$10.00'
         },
         {
             name: 'img9',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            image: img9
+            image: img9,
+            price: '$10.00'
         },
         {
             name: 'img10',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            image: img10
+            image: img10,
+            price: '$10.00'
         },
         {
             name: 'img11',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            image: img11
+            image: img11,
+            price: '$10.00'
         },
         {
             name: 'img12',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-            image: img12
+            image: img12,
+            price: '$10.00'
         }
     ];
 
