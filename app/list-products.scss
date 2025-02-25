@@ -1,0 +1,40 @@
+// index.scss
+
+// Dependencies
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/mixins";
+
+// Card
+@import "./node_modules/bootstrap/scss/card";
+
+// Alert
+@import "./node_modules/bootstrap/scss/alert";
+
+
+#products {
+    display: flex;
+    flex-wrap: wrap;       
+    justify-content: space-between; 
+}
+
+.card {
+    flex: 0 1 calc(33.33% - 1rem);
+    margin-bottom: 1rem;  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;  
+    overflow: hidden;     
+}
+
+.card-price {
+    font-weight: bold; 
+    color: #42ca61;   
+    margin-top: 0.5rem; 
+}
+
+.card-price {
+    font-weight: bold;
+    color: #05300f;   
+    margin-top: 0.5rem;
+}
+
