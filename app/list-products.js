@@ -20,74 +20,74 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const products = [
         {
-            name: 'img1',
+            name: 'poduct 1',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             image: img1,
             price: '$10.00'
         },
         {
-            name: 'img2',
+            name: 'poduct 2',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             image: img2,
             price: '$10.00'
             
         },
         {
-            name: 'img3',
+            name: 'poduct 3',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             image: img3,
             price: '$10.00'
         },
         {
-            name: 'img4',
+            name: 'poduct 4',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             image: img4,
             price: '$10.00'
         },
         {
-            name: 'img5',
+            name: 'poduct 5',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             image: img5,
             price: '$10.00'
         },
         {
-            name: 'img6',
+            name: 'poduct 6',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             image: img6,
             price: '$10.00'
         },
         {
-            name: 'img7',
+            name: 'poduct 7',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             image: img7,
             price: '$10.00'
         },
         {
-            name: 'img8',
+            name: 'poduct 8',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             image: img8,
             price: '$10.00'
         },
         {
-            name: 'img9',
+            name: 'poduct 9',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             image: img9,
             price: '$10.00'
         },
         {
-            name: 'img10',
+            name: 'poduct 10',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             image: img10,
             price: '$10.00'
         },
         {
-            name: 'img11',
+            name: 'poduct 11',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             image: img11,
             price: '$10.00'
         },
         {
-            name: 'img12',
+            name: 'poduct 12',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             image: img12,
             price: '$10.00'
@@ -95,6 +95,9 @@ document.addEventListener("DOMContentLoaded", () => {
     ];
 
     products.forEach(product => {
+        const colDiv = document.createElement('div');
+        colDiv.classList.add('col-md-4'); // Para pantallas medianas y grandes
+    
         const cardDiv = document.createElement('div');
         cardDiv.classList.add('card');
         
@@ -105,30 +108,29 @@ document.addEventListener("DOMContentLoaded", () => {
         img.style.maxWidth = '100%'; 
         img.style.maxHeight = '200px';
         img.style.objectFit = 'cover'
-
+    
         const cardBody = document.createElement('div');
         cardBody.classList.add('card-body');
-
+    
         const title = document.createElement('h4');
         title.classList.add('card-title');
         title.textContent = product.name;
-
+    
         const description = document.createElement('p');
         description.classList.add('card-text');
         description.textContent = product.description;
-
+    
         const addToCart = document.createElement('button');
-        addToCart.classList.add('btn');
-        addToCart.classList.add('btn-success');
-        addToCart.classList.add('float-end');
+        addToCart.classList.add('btn', 'btn-success', 'float-end');
         addToCart.textContent = "Add to cart";
-
+    
         cardBody.appendChild(title);
         cardBody.appendChild(description);
         cardBody.appendChild(addToCart);
         cardDiv.appendChild(img);
         cardDiv.appendChild(cardBody);
-
-        productsContainer.appendChild(cardDiv);
+        colDiv.appendChild(cardDiv); 
+    
+        productsContainer.appendChild(colDiv);
     });
 });
